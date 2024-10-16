@@ -1,7 +1,10 @@
+import ZipCodeSearch from "../components/search/ZipCodeSearch";
+import "../styles/Globals.css";
+
 const Home = () => {
   return (
     <div>
-      <h1>Hello, world!</h1>
+      <ZipCodeSearch />
     </div>
   );
 };
