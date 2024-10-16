@@ -1,0 +1,77 @@
+.search-history-container {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.search-history-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-history-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  gap: 0.25rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-zip,
+.history-city,
+.history-state {
+  font-size: 1rem;
+  color: #333;
+}
+
+.search-history-item:last-child {
+  border-bottom: none;
+}
+
+.search-history-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.search-history-button:hover {
+  background-color: #0056b3;
+}
+
+.search-history-button:focus {
+  outline: none;
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .search-history-container {
+    padding: 1rem;
+  }
+
+  .search-history-item {
+    flex-direction: column;
+  }
+
+  .history-zip,
+  .history-city,
+  .history-state {
+    font-size: 0.875rem;
+  }
+
+  .search-history-button {
+    font-size: 0.875rem;
+  }
+}
